@@ -20,7 +20,7 @@ Dataset(
         // Map Mode Framework Issues - 05/22/2026 - contr: tsind
         (
             identifiers: [
-                PackageId("nozome.mapmodeframework")
+                PackageId("nozome.mapmodeframework"),
                 WorkshopId(3296654393)
             ],
             notices: [
