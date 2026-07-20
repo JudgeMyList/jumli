@@ -168,7 +168,7 @@ Dataset(
                 ),
                 (
                   date: "2026-07-20",
-                  notice: Misc("If you absolutely must use animations, download this patched version instead. The patched version reportedly runs up to 2x faster at 250 pawns, but keep in mind it will still have a constant impact: https://github.com/Hexnet111/Yayos-Animation-Performance-Patch"
+                  notice: Miscellaneous("If you absolutely must use animations, download this patched version instead. The patched version reportedly runs up to 2x faster at 250 pawns, but keep in mind it will still have a constant impact: https://github.com/Hexnet111/Yayos-Animation-Performance-Patch"
                 )
             ]
         ),
