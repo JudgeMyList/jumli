@@ -18,7 +18,7 @@ Dataset(
             ],
             notices: [
                 (
-                    date: "1970-01-01",
+                    date: "1970-01-01", // Dates must be in ISO 8601 format: YYYY-MM-DD
                     notice: BadPerformance("Yuck!"), // ("explanation")
                     certainty: High, // How sure you are about this. Currently not shown to the user, but will be in the future.
                 ),
