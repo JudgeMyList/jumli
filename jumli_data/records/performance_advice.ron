@@ -491,12 +491,12 @@ Dataset(
           ],
           notices: [
             (
-              date: "05/22/2026",
+              date: "2026-05-22",
               notice: UseAlternative("Beard Age Requirement", 3706448581, "NBoT has reportedly considerable & unnecessary performance overhead. Recommended to replace it with 'Beard Age Requirement', specifically created as a more performance-friendly alternative."),
               certainty: High,
             ),
             (
-              date: "05/22/2026",
+              date: "2026-05-22",
               notice: UseAlternative("Mark of Manhood", 3646943505, "Optional alternative instead of 'Beard Age Requirement' with the same features."),
               certainty: High,
             )
