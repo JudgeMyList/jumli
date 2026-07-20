@@ -1,6 +1,6 @@
 Dataset(
     name: "Known Bugs",
-    description: "Known bugs and workarounds",
+    description: "Known vanilla bugs and workarounds",
 
     records: [
         // Odyssey DLC Performance Impact
@@ -15,25 +15,6 @@ Dataset(
                     certainty: High,
                     historical: true
                 )
-            ]
-        ),
-        // Map Mode Framework Issues - 05/22/2026 - contr: tsind
-        (
-            identifiers: [
-                PackageId("nozome.mapmodeframework"),
-                WorkshopId(3296654393)
-            ],
-            notices: [
-                (
-                    date: "2026-05-22",
-                    notice: Unstable("Map Mode Framework seems to have been abandoned in early development already and is now commonly causing hard crashes and broken saves for users."),
-                    certainty: High,
-                ),
-                (
-                    date: "2026-05-22",
-                    notice: UseAlternative("Map Mode Framework Forked", 3672467706, "Changing from the original mod to the bug-fixed fork by 'ColossalFossil' reportedly fixes all major issues. It's not 100% certain yet if it works flawlessly, but it's definitely more stable than the original."),
-                    certainty: Medium,
-                ),
             ]
         )
     ]
