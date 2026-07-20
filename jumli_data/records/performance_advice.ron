@@ -566,6 +566,20 @@ Dataset(
                     certainty: Medium,
                 ),
             ]
+        ),
+        // RimDoctor
+        (
+          identifiers: [
+            WorkshopId(3748829922)
+          ],
+          notices: [
+            (
+              date: "2026-07-20",
+              notice: Unstable("Remove immediately. It actively suppresses errors, has a constant performance impact due to always running its profiler and reimplements several things already in the basegame for no apparent reason. Mod appears to be AI-generated and is therefore very likely to be unstable."),
+              certainty: High,
+              context_url: "https://discord.com/channels/241677926855081984/708435078614614116/1518800101298933902",
+            )
+          ]
         )
     ]
 )
