@@ -534,6 +534,19 @@ Dataset(
               context_url: "https://discord.com/channels/241677926855081984/786001425309237279/1474806166222803096"
             )
           ]
+        ),
+        // FPS+ | RimThreaded by LuniX
+        (
+          identifiers: [
+            WorkshopId(3756967401)
+          ],
+          notices: [
+            (
+              date: "2026-07-20",
+              notice: Unstable("Remove immediately, does not actually improve your performance in any meaningful way and is likely to cause stability issues. This AI-generated mod that claims to be a continuation of RimThreaded while not actually being based on its source. Contains various random patches unrelated to threading with dubious effectiveness at best. Author does not appear to have the technical knowledge necessary to understand the LLM's output and has openly stated they are also using the model to help them respond to workshop comments."),
+              certainty: High
+            )
+          ]
         )
     ]
 )
