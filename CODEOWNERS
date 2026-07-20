@@ -1,0 +1,9 @@
+*              @JudgeMyList/administrators
+
+/.gitignore    @JudgeMyList/code-maintainers
+/Cargo.toml    @JudgeMyList/code-maintainers
+/Cargo.lock    @JudgeMyList/code-maintainers
+/README.md     @JudgeMyList/code-maintainers
+/jumli_gen/    @JudgeMyList/code-maintainers
+/jumli_static/ @JudgeMyList/code-maintainers
+/jumli_data/   @JudgeMyList/data-maintainers
