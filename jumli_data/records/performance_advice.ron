@@ -165,6 +165,10 @@ Dataset(
                   date: "2025-09-10",
                   notice: BadPerformance("Very heavy impact on TPS. You should disable it."),
                   certainty: High,
+                ),
+                (
+                  date: "2026-07-20",
+                  notice: Misc("If you absolutely must use animations, download this patched version instead. The patched version reportedly runs up to 2x faster at 250 pawns, but keep in mind it will still have a constant impact: https://github.com/Hexnet111/Yayos-Animation-Performance-Patch"
                 )
             ]
         ),
@@ -514,6 +518,66 @@ Dataset(
               notice: BadPerformance("Known to significantly affect performance without being in use by the player."),
               certainty: High,
               context_url: "https://discord.com/channels/241677926855081984/708435078614614116/1527002835240353965"
+            )
+          ]
+        ),
+        // Medieval Overhaul Patches
+        (
+          identifiers: [
+            PackageId("VR.MOPatches"),
+          ],
+          notices: [
+            (
+              date: "2026-07-20",
+              notice: Unstable("Very out-of-date. The mod author themself has advised others to stop using it."),
+              certainty: High,
+              context_url: "https://discord.com/channels/241677926855081984/786001425309237279/1474806166222803096"
+            )
+          ]
+        ),
+        // FPS+ | RimThreaded by LuniX
+        (
+          identifiers: [
+            WorkshopId(3756967401)
+          ],
+          notices: [
+            (
+              date: "2026-07-20",
+              notice: Unstable("Remove immediately, does not actually improve your performance in any meaningful way and is likely to cause stability issues. This AI-generated mod that claims to be a continuation of RimThreaded while not actually being based on its source. Contains various random patches unrelated to threading with dubious effectiveness at best. Author does not appear to have the technical knowledge necessary to understand the LLM's output and has openly stated they are also using the model to help them respond to workshop comments."),
+              certainty: High
+            )
+          ]
+        ),
+        // Map Mode Framework Issues - 05/22/2026 - contr: tsind
+        (
+            identifiers: [
+                PackageId("nozome.mapmodeframework"),
+                WorkshopId(3296654393)
+            ],
+            notices: [
+                (
+                    date: "2026-05-22",
+                    notice: Unstable("Map Mode Framework seems to have been abandoned in early development already and is now commonly causing hard crashes and broken saves for users."),
+                    certainty: High,
+                ),
+                (
+                    date: "2026-05-22",
+                    notice: UseAlternative("Map Mode Framework Forked", 3672467706, "Changing from the original mod to the bug-fixed fork by 'ColossalFossil' reportedly fixes all major issues. It's not 100% certain yet if it works flawlessly, but it's definitely more stable than the original."),
+                    certainty: Medium,
+                ),
+            ]
+        ),
+        // RimDoctor
+        (
+          identifiers: [
+            WorkshopId(3748829922)
+          ],
+          notices: [
+            (
+              date: "2026-07-20",
+              notice: Unstable("Remove immediately. It actively suppresses errors, has a constant performance impact due to always running its profiler and reimplements several things already in the basegame for no apparent reason. Mod appears to be AI-generated and is therefore very likely to be unstable."),
+              certainty: High,
+              context_url: "https://discord.com/channels/241677926855081984/708435078614614116/1518800101298933902",
             )
           ]
         )
