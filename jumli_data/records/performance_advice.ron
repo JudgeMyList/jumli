@@ -501,6 +501,21 @@ Dataset(
               certainty: High,
             )
           ]
+        ),
+        // VehicleRaid Framework
+        (
+          identifiers: [
+            PackageId("gabrieel1482.raidvehicleframework"),
+            WorkshopId(3667863988)
+          ],
+          notices: [
+            (
+              date: "2026-07-20",
+              notice: BadPerformance("Known to significantly affect performance without being in use by the player."),
+              certainty: High,
+              context_url: "https://discord.com/channels/241677926855081984/708435078614614116/1527002835240353965"
+            )
+          ]
         )
     ]
 )
