@@ -1,19 +1,14 @@
-use std::{env, error::Error, fs::OpenOptions, io::BufWriter, path::PathBuf};
 use std::collections::HashMap;
+use std::{env, error::Error, fs::OpenOptions, io::BufWriter, path::PathBuf};
 
 use mapmysite::{ChangeFreq, Sitemap, SitemapUrl};
 use tracing::{error, info};
 
-use crate::{
+use jumli_gen::{
     records::{DatabaseBuilder, types::ModIdentifier},
     render::{RenderHtml, frame_html, render_diagnostics},
     sources::{jumli_data::JumliData, use_this_instead::UseThisInstead},
 };
-
-pub mod consts;
-pub mod records;
-pub mod render;
-pub mod sources;
 
 pub const SUBDIR_WORKSHOP_REDIRECT: &'static str = "workshop";
 pub const SUBDIR_PACKAGEID_REDIRECT: &'static str = "package";
@@ -83,7 +78,16 @@ async fn main() -> Result<(), Box<dyn Error>> {
                 .write(true)
                 .open(mods_path.join("index.json"))?,
         ),
-        &db.indices.iter().filter(|(_, idx)| db.records[**idx].notices.iter().find(|x| !x.historical).is_some()).collect::<HashMap<_,_>>(),
+        &db.indices
+            .iter()
+            .filter(|(_, idx)| {
+                db.records[**idx]
+                    .notices
+                    .iter()
+                    .find(|x| !x.historical)
+                    .is_some()
+            })
+            .collect::<HashMap<_, _>>(),
     )?;
 
     info!("Rendering reports.");

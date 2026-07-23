@@ -18,20 +18,20 @@ pub const RON_OPTIONS: LazyCell<ron::Options> =
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(rename = "Dataset")]
-struct DatasetFile {
+pub struct DatasetFile {
     name: String,
     description: String,
     records: Vec<DatasetFileRecord>,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-struct DatasetFileRecord {
+pub struct DatasetFileRecord {
     identifiers: Vec<ModIdentifier>,
     notices: Vec<LocalNotice>,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-struct LocalNotice {
+pub struct LocalNotice {
     pub date: Option<NaiveDate>,
     pub notice: Notice,
     pub certainty: Certainty,
