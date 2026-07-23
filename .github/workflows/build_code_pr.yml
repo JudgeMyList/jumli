@@ -18,6 +18,7 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
         with:
+          cache-workspace-crates: true
           shared-key: "ci"
           save-if: false
       - name: Build crates
