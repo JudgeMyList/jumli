@@ -3,6 +3,12 @@ name: Build crates
 on:
   pull_request:
     branches: [ main ]
+    paths:
+      - jumli_gen/**
+      - jumli_validator/**
+      - mapmysite/**
+      - Cargo.lock
+      - Cargo.toml
 
 jobs:
   build:
