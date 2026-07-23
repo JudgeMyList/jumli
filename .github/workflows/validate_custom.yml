@@ -1,0 +1,21 @@
+name: Dataset validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+          override-file: rust-toolchain
+      - name: Run validator
+        run: cargo run --bin jumli_validator -- jumli_data/records
