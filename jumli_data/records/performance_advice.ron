@@ -614,6 +614,26 @@ Dataset(
                     context_url: "https://steamcommunity.com/workshop/filedetails/discussion/3679396881/807971027746468676/"
                 )
             ]
+        ),
+        // Majestic Foliage Framework[HH] (Continued)
+        (
+            identifiers: [
+                WorkshopId(3358954913)
+            ],
+            notices: [
+                (
+                    data: "2026-07-23",
+                    notice: BadPerformance("Tree transparency feature has constant, heavy impact on performance. Recommend removing."),
+                    certainty: High,
+                    context_urL: "https://discord.com/channels/241677926855081984/660280287497814078/1072619451972845568"
+                ),
+                (
+                    data: "2026-07-23",
+                    notice: Miscellaneous("The original version has not been in development since 1.4 and the Continued version has been officially discontinued with the 1.6 update. Any bugs and compatibility issues you may run into will likely not be patched. You are unlikely to receive support when using this mod.")
+                    certainty: High,
+                    context_url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3358954913",
+                )
+            ]
         )
     ]
 )
