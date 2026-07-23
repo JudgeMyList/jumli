@@ -1,10 +1,13 @@
 name: Dataset validation
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
+    paths:
+      - jumli_*/**
+      - mapmysite/**
+      - Cargo.lock
+      - Cargo.toml
 
 jobs:
   validate:
