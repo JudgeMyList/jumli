@@ -3,21 +3,16 @@ name: Build crates
 on:
   pull_request:
     branches: [ main ]
-    paths:
-      - jumli_gen/**
-      - jumli_validator/**
-      - mapmysite/**
-      - Cargo.lock
-      - Cargo.toml
 
 jobs:
-  build:
+  build_crates:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
         with:
+          cache-workspace-crates: true
           shared-key: "ci"
           save-if: false
       - name: Build crates

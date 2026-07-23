@@ -6,6 +6,11 @@ on:
   workflow_dispatch:
   push:
     branches: main
+    paths:
+      - jumli_*/**
+      - mapmysite/**
+      - Cargo.lock
+      - Cargo.toml
 
 jobs:
   build:
@@ -19,6 +24,7 @@ jobs:
 
       - uses: Swatinem/rust-cache@v2
         with:
+          cache-workspace-crates: true
           shared-key: "ci"
           save-if: ${{ github.ref == 'refs/heads/main' }}
 

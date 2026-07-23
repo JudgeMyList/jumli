@@ -45,6 +45,7 @@ fn main() -> Result<(), anyhow::Error> {
         return Ok(());
     }
 
+    info!("Encountered {} error(s).", errors.len());
     for error in errors {
         error!("{}", error);
     }
