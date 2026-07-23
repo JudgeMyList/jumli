@@ -1,0 +1,25 @@
+name: Build crates
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - jumli_gen/**
+      - jumli_validator/**
+      - mapmysite/**
+      - Cargo.lock
+      - Cargo.toml
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+          override-file: rust-toolchain
+      - name: Build crates
+        run: cargo build
