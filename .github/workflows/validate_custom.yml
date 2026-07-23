@@ -15,6 +15,6 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           shared-key: "ci"
-          save-if: ${{ github.ref == 'refs/heads/master' }}
+          save-if: ${{ github.ref == 'refs/heads/main' }}
       - name: Run validator
         run: cargo run --bin jumli_validator -- jumli_data/records
