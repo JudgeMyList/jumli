@@ -12,7 +12,6 @@ Dataset(
                 (
                   date: "2025-09-10",
                   notice: BadPerformance("The DLC is known to hit TPS quite heavily, even if its content is not immediately present. If you are having issues with your TPS and are not planning on an Anomaly-focused run, seriously consider disabling it."),
-                  certainty: High,
                 )
             ]
         ),
