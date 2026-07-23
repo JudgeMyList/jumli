@@ -581,6 +581,19 @@ Dataset(
               context_url: "https://discord.com/channels/241677926855081984/708435078614614116/1518800101298933902",
             )
           ]
+        ),
+        // Rimworld Animations 2.0 (RJW Animations)
+        (
+            identifiers: [
+                PackageId("c0ffee.rimworld.animations")
+            ],
+            notices: [
+                (
+                    date: "2026-07-22",
+                    notice: BadPerformance("Recommend disabling. As with most other animation mods, this one has a constant impact on performance scaling with the amount of pawns rendered."),
+                    certainty: High,
+                )
+            ]
         )
     ]
 )
