@@ -582,6 +582,19 @@ Dataset(
             )
           ]
         ),
+        // Performance Fish (to warn about unstable forks that claim to update it, remove this record once it's officially released)
+        (
+          identifiers: [
+            PackageId("bs.performance")
+          ],
+          notices: [
+            (
+              date: "2026-07-23",
+              notice: Unstable("You appear to be using an unofficial fork of Performance Fish, you should remove it immediately. There has been no official release for 1.6 yet and dubious forks claiming to bring it up-to-date are known for being very unstable and generally causing more issues than they solve."),
+              certainty: High
+            )
+          ]
+        ),
         // Rimworld Animations 2.0 (RJW Animations)
         (
             identifiers: [
