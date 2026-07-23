@@ -3,11 +3,6 @@ name: Dataset validation
 on:
   pull_request:
     branches: [ main ]
-    paths:
-      - jumli_*/**
-      - mapmysite/**
-      - Cargo.lock
-      - Cargo.toml
 
 jobs:
   validate:
