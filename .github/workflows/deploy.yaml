@@ -21,7 +21,9 @@ jobs:
           toolchain: stable
           override: true
           override-file: rust-toolchain
-          
+
+      - uses: Swatinem/rust-cache@v2
+
       - name: Set up environment
         run: mkdir _site
       
