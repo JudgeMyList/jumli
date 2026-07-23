@@ -581,6 +581,59 @@ Dataset(
               context_url: "https://discord.com/channels/241677926855081984/708435078614614116/1518800101298933902",
             )
           ]
+        ),
+        // Rimworld Animations 2.0 (RJW Animations)
+        (
+            identifiers: [
+                PackageId("c0ffee.rimworld.animations")
+            ],
+            notices: [
+                (
+                    date: "2026-07-22",
+                    notice: BadPerformance("Recommend disabling. As with most other animation mods, this one has a constant impact on performance scaling with the amount of pawns rendered."),
+                    certainty: High,
+                )
+            ]
+        ),
+        // Zoology: Realistic Animal Overhaul
+        (
+            identifiers: [
+                WorkshopId(3679396881)
+            ],
+            notices: [
+                (
+                    data: "2026-07-23",
+                    notice: BadPerformance("Consistently adds several minutes of loading time due to a massive number of patches with redundant checks. Author has confirmed they auto-generate these patches using a Python script in Workshop comments."),
+                    certainty: High,
+                    context_url: "https://discord.com/channels/241677926855081984/708435078614614116/1518356946481316005"
+                ),
+                (
+                    data: "2026-07-23",
+                    notice: Unstable("Considering the authors approach (see bad performance notice), compatiblity issues are very likely should patched animals get updated. See context URL for a list of patched mods maintained by the author."),
+                    certainty: High,
+                    context_url: "https://steamcommunity.com/workshop/filedetails/discussion/3679396881/807971027746468676/"
+                )
+            ]
+        ),
+        // Majestic Foliage Framework[HH] (Continued)
+        (
+            identifiers: [
+                WorkshopId(3358954913)
+            ],
+            notices: [
+                (
+                    data: "2026-07-23",
+                    notice: BadPerformance("Tree transparency feature has constant, heavy impact on performance. Recommend removing."),
+                    certainty: High,
+                    context_urL: "https://discord.com/channels/241677926855081984/660280287497814078/1072619451972845568"
+                ),
+                (
+                    data: "2026-07-23",
+                    notice: Miscellaneous("The original version has not been in development since 1.4 and the Continued version has been officially discontinued with the 1.6 update. Any bugs and compatibility issues you may run into will likely not be patched. You are unlikely to receive support when using this mod."),
+                    certainty: High,
+                    context_url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3358954913",
+                )
+            ]
         )
     ]
 )
