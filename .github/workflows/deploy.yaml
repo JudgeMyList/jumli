@@ -20,7 +20,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           shared-key: "ci"
-          save-if: ${{ github.ref == 'refs/heads/master' }}
+          save-if: ${{ github.ref == 'refs/heads/main' }}
 
       - name: Set up environment
         run: mkdir _site
