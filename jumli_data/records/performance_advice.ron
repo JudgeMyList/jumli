@@ -647,6 +647,25 @@ Dataset(
                     context_url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3358954913",
                 )
             ]
+        ),
+        // Better GC: Mothballed and World Pawns
+        (
+            identifiers: [
+                WorkshopId(2982026860),
+                PackageId("gwinnbleidd.mothballedanddeadpawns")
+            ],
+            notices: [
+                (
+                    data: "2026-07-24",
+                    notice: Unstable("Remove. Has had issues with deleting pawns that are still required due to conditions for deletion being changed, breaking saves."),
+                    certainty: High
+                ),
+                (
+                    data: "2026-07-24",
+                    notice: UseAlternative("Placebo", 3653846815, "Implemented differently, adds mothballing to any hediffs that don't already have it. Will not delete pawns that shouldn't be deleted."),
+                    certainty: High
+                )
+            ]
         )
     ]
 )
